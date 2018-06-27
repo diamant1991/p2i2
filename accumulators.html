@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Alexander Logachev">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css" />
+    <title>page</title>
+</head>
+<body>
+  <section>
+    <div class="container">
+        <div class="row">
+            <header>
+                <div class="item">
+                    <a class="logo" href="/">
+                        <img src="images/menu/logo.png" alt="logo">
+                    </a>
+                    <div class="phone">
+                        <a href="tel:8 (812) 409-34-64">
+                            <img src="images/menu/stac.png" alt="stacionar">
+                            8 (812) 409-34-64
+                        </a>
+                        <a href="tel:8 (812) 924-32-31">
+                            <img src="images/menu/mob.png" alt="mobile">
+                            8 (812) 924-32-31
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="adress">
+                        <div class="adress__img">
+                            <img src="images/menu/map.png" alt="logo">
+                        </div>
+                        <div class="adress__info">
+                            <p>СПб, Полюстровский пр. 28</p>
+                            <a href="/buyer/contacts/">Карта проезда</a>
+                        </div>
+                    </div>
+                    <div class="bascket basketBlock">
+                        <img src="images/menu/cart.png" alt="logo">
+                        корзина пуста
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="row">
+        <nav class="main-menu">
+            <ul>
+                <li><img src="images/menu/q1.png" alt=""><a href="/tyres/">Шины</a></li>
+                <li><img src="images/menu/q2.png" alt=""><a href="/disks/">Диски</a></li>
+                <li><img src="images/menu/q3.png" alt=""><a href="/accumulators/">Аккумуляторы</a></li>
+                <li><img src="images/menu/q4.png" alt=""><a href="/oil/">Моторные масла</a></li>
+                <li><img src="images/menu/q5.png" alt=""><a href="/accessories/">Аксессуары</a></li>
+                <li><img src="images/menu/q6.png" alt=""><a href="/shinomontage/">Шиномонтаж</a></li>
+                <li><img src="images/menu/q7.png" alt="">
+                    <a href="/buyer/">Покупателю</a>
+                    <ul class="podmenu">
+                        <li>
+                            <a href="/buyer/about/">О магазине</a>
+                        </li>
+                        <li>
+                            <a href="/buyer/warranty/">Гарантия</a>
+                        </li>
+                        <li>
+                            <a href="/buyer/delivery/">Оплата и доставка</a>
+                        </li>
+                        <li>
+                            <a href="/buyer/contacts/">Контакты</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="bread-crumbs"><ul>
+          <li>        
+            <a href="/" title="Главная">
+              Главная
+            </a>
+          </li>
+          <li>        
+            <a href="/accessories/" title="Аксессуары" class="active">
+              Аккумуляторы
+            </a>
+          </li></ul><span>Обновлено: вчера</span>
+        </div>
+        <div class="col-xs-12 catalog-container">
+          <div class="row catalog-container__flex-row">
+            <div class="col-md-3 col-sm-12">
+              <div class="bx-sidebar-block">
+                <div class="show-filter-btn">
+                  <span>Показать фильтр</span>
+                </div>
+                <div class="form_car">
+                  <div class="bx-filter">
+                    <div class="bx-filter-section container-fluid">
+                      <form action="">
+                        <div class="row">
+                          <div class="col-lg-12 bx-filter-parameters-box bx-active filter-price-box">
+                            <div class="section-filter-img">
+                              <img src="images/menu/accum-filter-img.png" alt="">
+                             </div>
+                          </div>
+                          <div class="col-lg-12 bx-filter-parameters-box bx-active filter-price-box">
+                            <div class="bx-filter-block">
+                              <div class="row bx-filter-parameters-box-container filter-price">
+                                <div class="col-xs-6 bx-filter-parameters-box-container-block bx-left">
+                                  <div class="bx-filter-input-container">
+                                    <input type="text" placeholder="от">
+                                  </div>
+                                </div>
+                                <div class="col-xs-6 bx-filter-parameters-box-container-block bx-right">
+                                  <div class="bx-filter-input-container">
+                                    <input type="text" placeholder="до">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-12 bx-filter-parameters-box bx-active filter-price-box">
+                            <select name="" id="">
+                              <option value="">Производитель</option>
+                              <option value="">Значение 1</option>
+                              <option value="">Значение 2</option>
+                              <option value="">Значение 3</option>
+                            </select>
+                          </div>
+                          <div class="col-lg-12 bx-filter-parameters-box bx-active filter-price-box">
+                            <select name="" id="">
+                              <option value="">Емкость</option>
+                              <option value="">Значение 1</option>
+                              <option value="">Значение 2</option>
+                              <option value="">Значение 3</option>
+                            </select>
+                          </div>
+                          <div class="col-lg-12 bx-filter-parameters-box bx-active filter-price-box">
+                            <select name="" id="">
+                              <option value="">Полярность</option>
+                              <option value="">Значение 1</option>
+                              <option value="">Значение 2</option>
+                              <option value="">Значение 3</option>
+                            </select>
+                          </div>
+                          <div class="col-lg-12 bx-filter-parameters-box bx-active filter-price-box">
+                            <select name="" id="">
+                              <option value="">Пусковой ток</option>
+                              <option value="">Значение 1</option>
+                              <option value="">Значение 2</option>
+                              <option value="">Значение 3</option>
+                            </select>
+                          </div>
+                          <div class="col-lg-12 bx-filter-parameters-box bx-active filter-price-box">
+                            <select name="" id="">
+                              <option value="">Размеры</option>
+                              <option value="">Значение 1</option>
+                              <option value="">Значение 2</option>
+                              <option value="">Значение 3</option>
+                            </select>
+                          </div>
+                          <div class="col-lg-12 bx-filter-parameters-box bx-active filter-price-box">
+                            <select name="" id="">
+                              <option value="">Тип корпуса</option>
+                              <option value="">Значение 1</option>
+                              <option value="">Значение 2</option>
+                              <option value="">Значение 3</option>
+                            </select>
+                          </div>
+                          <div class="col-lg-12 bx-filter-parameters-box bx-active filter-price-box">
+                            <select name="" id="">
+                              <option value="">Тип клеем</option>
+                              <option value="">Значение 1</option>
+                              <option value="">Значение 2</option>
+                              <option value="">Значение 3</option>
+                            </select>
+                          </div>
+                          <div class="col-lg-12 bx-filter-parameters-box bx-active filter-price-box">
+                             <input class="btn btn-submit btn-filter" type="button" value="Показать">
+                          </div>
+                          <div class="col-lg-12 bx-filter-parameters-box bx-active filter-price-box">
+                             <input class="btn btn-submit btn-filter" type="button" value="Сбросить">
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9 col-sm-12">
+              <div class="bx-section-desc bx-blue">
+                <p class="bx-section-desc-post"></p>
+              </div>
+              <h1 class="section_title">Аккумуляторы</h1>
+              <div class="sorting">
+                  <span>Сортировать:</span>
+                  <ul>
+                      <li class="">
+                          <a href="/accumulators/index.php?sort=price&amp;by=asc">
+                              по цене
+                                          </a>
+                      </li>
+                      <li class="">
+                          <a href="/accumulators/index.php?sort=qnt&amp;by=asc">
+                              по наличию
+                                          </a>
+                      </li>
+                      <li class="">
+                          <a href="/accumulators/index.php?sort=manufacturer&amp;by=asc">
+                              по производителю
+                                          </a>
+                      </li>
+                  </ul>
+                  <div class="check-wrapper">
+                      <div class="check">
+                          <input type="radio" id="s1" data-tourl="/accumulators/index.php?inStock=Y" name="cc">
+                          <label for="s1">В наличии<span></span></label>
+                      </div>
+                      <div class="check">
+                          <input type="radio" id="s2" data-tourl="/accumulators/index.php?inStock=more" name="cc">
+                          <label for="s2">Остаток от 4 шт.<span></span></label>
+                      </div>
+                  </div>
+                  <div class="view">
+                      <span>Вид</span>
+                      <ul>
+                          <li class="block active" data-tooltipleft="Список"></li>
+                          <li class="line" data-tooltipleft="Таблица"></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="strip row"></div>
+              <div class="brands">
+                <div id="triangle-left"></div>
+                <div id="triangle-right"></div>
+                <ul class="categories-carousel owl-carousel">
+                  <div class="item">
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <div class="row slider-stripe"></div>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                  </div>
+                  <div class="item">
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <div class="row slider-stripe"></div>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tyres/amtel/">
+                            <img src="/upload/iblock/20d/20d583b05c4d4e79ad4573aac00321ec.jpg" alt="AMTEL">
+                        </a>
+                    </li>
+                  </div>
+                </ul>
+              </div>
+              <div class="strip row"></div>
+              <div class="sorting_bottom">
+                <span>Товары 1        - 30 из 11166</span>
+                <div class="nav-pages">
+                  <span class="nav-current-page">&nbsp;1&nbsp;</span>&nbsp;
+                      
+                  <a href="#">2</a>&nbsp;
+                  <a href="#">3</a>&nbsp;
+                  <a href="#">4</a>&nbsp;
+                  <a href="#">5</a>&nbsp;                  
+                  |&nbsp;<a href="/tyres/index.php?inStock=Y&amp;PAGEN_1=2">»</a>&nbsp;|&nbsp;
+                  <a href="/tyres/index.php?inStock=Y&amp;PAGEN_1=373">конец</a>&nbsp;
+                </div>
+              </div>
+              <div class="cart_product row row-accumulators">
+                <div class="product_row accum_row">
+                  <div class="product_image acc_image">
+                      <div>
+                          <a href="/accumulators/yamal/yamal_60_p_p_60_pryamaya_530_242x175x190_evropeyskiy_standartnye/">
+                              <img src="/upload/iblock/ae0/ae0357ba764d7d6fe60b94d2ab4aba2e.jpg" alt="ЯМАЛ 60 П.П.">
+                          </a>
+                          <p>Артикул:60162910</p>
+                                          </div>
+                      </div>
+                      <div class="product_params">
+                          <div class="product_params__flex accum-name-wrapper">
+                              <div>
+
+                                  <div class="icon">
+                                                                                                          <img src="/upload/iblock/d65/d654ea834644e3316adb3385752497f1.jpg" alt="ЯМАЛ">
+                                                                  </div>
+                                  <div class="cell">
+                                      <a href="/accumulators/yamal/yamal_60_p_p_60_pryamaya_530_242x175x190_evropeyskiy_standartnye/">
+                                          ЯМАЛ 60 П.П.                                </a>
+                                  </div>
+                              </div>
+                          </div>
+
+
+                          <div class="accumulators-icon">
+
+                              <div class="acc_flex">
+                                  <div class="accumulators-icon-elem">
+                                      <label>
+                                          Размер (д/ш/в)
+                                      </label>
+                                      <span>242X175X190</span>
+                                  </div>
+                                  <div class="accumulators-icon-elem">
+                                      <label>
+                                          Емкость
+                                      </label>
+                                      <span>60</span>
+                                  </div>
+                              </div>
+
+                              <div class="acc_flex">
+                                  <div class="accumulators-icon-elem">
+                                      <label>
+                                          Пусковой ток
+                                      </label>
+                                      <span>530</span>
+                                  </div>
+                                  <div class="accumulators-icon-elem">
+                                      <label>
+                                          Полярность
+                                      </label>
+                                      <span>ПРЯМАЯ</span>
+                                  </div>
+                              </div>
+                              <div class="acc_flex">
+                                  <div class="accumulators-icon-elem">
+                                      <label>
+                                          Тип корпуса
+                                      </label>
+                                      <span>ЕВРОПЕЙСКИЙ</span>
+                                  </div>
+                                  <div class="accumulators-icon-elem">
+                                      <label>
+                                          Тип клемм
+                                      </label>
+                                      <span>СТАНДАРТНЫЕ</span>
+                                  </div>
+                              </div>
+                          </div>
+
+                      </div>
+
+                      <div class="product_price">
+                  
+                          <div>
+                                                          <div style="margin-bottom:14px;">
+                                      <p><span class="today">сегодня</span> &gt; 4 шт.</p>
+                                      3560.00                                <span>руб.</span>
+                                  </div>
+                                                  </div>
+                      </div>
+                      <div class="product_quantity">
+                                                  <div class="main2basket" style="margin-bottom:14px;">
+                                       <span class="number">
+                                          <a href="#minus"></a>
+                                          <input type="text" name="prodCNT" data-id="162910" data-priceid="343975" data-storeid="23" value="4">
+                                          <a href="#plus"></a>
+                                       </span>
+                                  <a class="add2basket-list add2basket-btn"></a>
+                              </div>
+                                      </div>
+                </div>
+              </div>
+              <div class="sorting_bottom">
+                <span>Товары 1        - 30 из 539</span>
+
+                <div class="nav-pages">
+                      <span class="nav-current-page">&nbsp;1&nbsp;</span>&nbsp;
+                       
+                      <a href="/accumulators/?PAGEN_1=2">2</a>&nbsp;
+                          
+                      <a href="/accumulators/?PAGEN_1=3">3</a>&nbsp;
+                          
+                      <a href="/accumulators/?PAGEN_1=4">4</a>&nbsp;
+                          
+                      <a href="/accumulators/?PAGEN_1=5">5</a>&nbsp;
+                  
+                       |&nbsp;<a href="/accumulators/?PAGEN_1=2">»</a>&nbsp;|&nbsp;
+                        <a href="/accumulators/?PAGEN_1=18">Конец</a>&nbsp;
+                  </div>
+              </div>
+              <div class="car_tires">
+                    <div class="text">
+                        <h3>Основные размеры шин и литых дисков:</h3>
+                <ul>
+                    <li><span>шины R 14</span> (Honda Civic; Chevrolet Lanos)</li>
+                    <li><span>шины R15</span> (Chevrolet Aveo, Lacetti; Ford C-Max; Mazda 3, 6; Mitsubishi Lancer, Pajero; Nissan
+                        Almera, Pathfinder)
+                    </li>
+                    <li><span>литые диски R16</span> (Audi A4, A6, TT; BMW Z3; Citroen C4; Ford Focus; ГАЗель; Hummer H3; Hyundai
+                        Santa-Fe; Nissan Primera)
+                    </li>
+                    <li><span>литые диски R17</span> (Audi A8; TrailBlazer; Ford Explorer, Mondeo; Hummer H2; Hyundai Sonata; Nissan
+                        Patrol, Qashqai, Teana)
+                    </li>
+                    <li><span>шины R18</span> (Audi Q7, RS4; BMW X3, 6 Series)</li>
+                    <li><span>шины R19</span> (Dodge Magnum)</li>
+                </ul>
+                <p>"Склад Шин" специализируется на оптовых и розничных продажах автомобильных шин.</p>
+                <p>Мы надеемся, что в нашем магазине вы увидите реальный ассортимент автошин по приятной цене.</p>
+                <p>Заказать автошины вы можете прямо сейчас через наш магазин или с 10 до 20 часов по телефону: 8 (812)
+                    924-32-31.</p>
+                <p>Наши специалисты помогут вам при выборе автомобильных дисков.</p>
+                <div class="row">
+                    <h3>Выбираем автомобильные шины</h3>
+                    <p>Со сменой времени года в нашем регионе наступает пора замены автомобильных шин и дисков. Буквально к каждому
+                        сезону производители готовят новые более совершенные новинки, а автовладельцы задаются вопросами, какие же
+                        шины приобрести в этот раз, стоит ли остановить свой выбор на летних моделях или предпочесть всесезонные
+                        образцы. Стоит ли купить новые или экономнее подержанные шины? Предпочесть стандартный вариант или выбрать
+                        низкий профиль?</p>
+                    <div><img src="&lt;?= SITE_TEMPLATE_PATH ?&gt;/images/car-tires/img3.jpg" width="150" height="92" alt=""></div>
+                </div>
+                <div class="row_bottom">
+                    <h3>Автомобильные шины низкого профиля - нужны или нет?</h3>
+                    <p>Низкопрофильными шинами называют модели, у которых соотношение высоты профиля колесной шины к ее ширине
+                        составляет 70% и менее. Их нельзя назвать бюджетным вариантом, потому что вместе автошинами, вам потребуется
+                        приобрести новые диски большего размера. Популярные сегодня низкопрофильные автошины впервые появились в
+                        1937 году. Это была новинка от компании <span>Michelin</span>, но машины и дороги того времени были
+                        неспособны принять такую резину. Их стали использовать на гоночных треках. Основным преимуществом этой
+                        продукции является меньшая раскачка кузова при маневрах, и, как следствие, лучшая управляемость авто. Низкий
+                        профиль, предназначенный для обычных легковых машин, в 1977 году предложила компания <span>Pirelli</span>,
+                        выпустив легендарные серии P6 и P7. С этого времени каждый производитель автошин имеет в своей
+                        ассортиментной линейке низкопрофильные образцы. Например, производством подобных шин занимается фирмы <span>Nokian</span>
+                        или RunFlat.</p>
+                    <p>Для того, чтобы облегчить выбор, в нашем каталоге подобные шины выделены в отдельную категорию. Наиболее
+                        часто эта продукция приобретается владельцами легковых авто, но при необходимости вы легко сможете найти
+                        низкопрофильные шины для грузовиков. Отдать предпочтение низкопрофильным покрышкам означает повысить
+                        сцепление с дорогой и устойчивость на поворотах, улучшить тормозные свойства авто. Они идеально подходят
+                        тем, кто предпочитает агрессивный стиль вождения и основную часть времени ездят по асфальтовому
+                        покрытию.</p>
+                    <div><img src="&lt;?= SITE_TEMPLATE_PATH ?&gt;/images/car-tires/img4.jpg" width="150" height="202" alt=""></div>
+                    <p>Недостатки авто шин с низким профилем являются продолжением их преимуществ. Высокая площадь контакта с
+                        дорогой снижает уровень комфорта во время езды. Низкий профиль не подходит владельцам машин с малыми
+                        объемами двигателей, так как с увеличением веса покрышки, увеличивается расход топлива. Если машина не
+                        оснащена гидроусилителем руля, вы, скорее всего, почувствуете, что автомобиль стал менее легким в
+                        управлении. Самым главным недостатком принято считать понижение устойчивости авто на мокрой и заснеженной
+                        дороге. Взвесив все за и против, вы сможете остановить свой выбор на наиболее подходящем для вас вариант</p>
+                </div>                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <a class="logo" href="/">
+                    <img src="images/menu/flogo.png" alt="logo">
+                </a>
+                <div class="copi">«Sklad-shin.ru» Все права защищены.</div>
+            </div>
+            <div class="col-md-5 col-sm-6 col-xs-6">
+                <a class="link_map" href="/sitemap/">Карта сайта</a>
+                <div class="text">Сайт носит исключительно информационный характер, и ни при каких условиях
+                    информация, размещенная на сайте, не является публичной офертой, определяемой положениями
+                    Статьи 437 Гражданского кодекса РФ.
+                </div>
+            </div>
+            <div class="col-md-3 col-md-offset-1 col-xs-12">
+                <div class="links">
+                    <p>«Альтера» — <a href="#">Продвижение сайта</a> sklad-shin.ru в Яндекс и Google</p>
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Соглашение об обработке персональных данных</a>
+                </div>
+            </div> 
+        </div>
+    </div>
+  </footer>
+
+
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.selectBox.js"></script>
+  <script src="js/jquery.placeholder.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+</body>
+</html>

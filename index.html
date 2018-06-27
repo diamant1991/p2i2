@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Alexander Logachev">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css" />
+    <title>page</title>
+</head>
+<body>
+  <section>
+    <div class="container">
+        <div class="row">
+            <header>
+                <div class="item">
+                    <a class="logo" href="/">
+                        <img src="images/menu/logo.png" alt="logo">
+                    </a>
+                    <div class="phone">
+                        <a href="tel:8 (812) 409-34-64">
+                            <img src="images/menu/stac.png" alt="stacionar">
+                            8 (812) 409-34-64
+                        </a>
+                        <a href="tel:8 (812) 924-32-31">
+                            <img src="images/menu/mob.png" alt="mobile">
+                            8 (812) 924-32-31
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="adress">
+                        <div class="adress__img">
+                            <img src="images/menu/map.png" alt="logo">
+                        </div>
+                        <div class="adress__info">
+                            <p>СПб, Полюстровский пр. 28</p>
+                            <a href="/buyer/contacts/">Карта проезда</a>
+                        </div>
+                    </div>
+                    <div class="bascket basketBlock">
+                        <img src="images/menu/cart.png" alt="logo">
+                        Корзина пуста
+                        <a href="/cart/" class="basketBlockGreen" style="display: inline;">    
+                          <table>        
+                            <tbody>
+                              <tr>            
+                                <td>                
+                                  <img src="images/basket-white.png" alt="">            
+                                </td>            
+                                <td>                
+                                  <span class="basketBlockGreenCnt" data-cnt="1">1</span>            
+                                </td>        
+                              </tr>    
+                            </tbody>
+                          </table>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="row">
+        <nav class="main-menu">
+            <ul>
+                <li><img src="images/menu/q1.png" alt=""><a href="/tyres/">Шины</a></li>
+                <li><img src="images/menu/q2.png" alt=""><a href="/disks/">Диски</a></li>
+                <li><img src="images/menu/q3.png" alt=""><a href="/accumulators/">Аккумуляторы</a></li>
+                <li><img src="images/menu/q4.png" alt=""><a href="/oil/">Моторные масла</a></li>
+                <li><img src="images/menu/q5.png" alt=""><a href="/accessories/">Аксессуары</a></li>
+                <li><img src="images/menu/q6.png" alt=""><a href="/shinomontage/">Шиномонтаж</a></li>
+                <li><img src="images/menu/q7.png" alt="">
+                    <a href="/buyer/">Покупателю</a>
+                    <ul class="podmenu">
+                        <li>
+                            <a href="/buyer/about/">О магазине</a>
+                        </li>
+                        <li>
+                            <a href="/buyer/warranty/">Гарантия</a>
+                        </li>
+                        <li>
+                            <a href="/buyer/delivery/">Оплата и доставка</a>
+                        </li>
+                        <li>
+                            <a href="/buyer/contacts/">Контакты</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+    <div class="container">
+      <div class="containerr">
+        <div class="main filters-main">
+          <ul class="tabs row">
+            <li class="current">ПОДБОР ШИН</li>
+            <li>ПОДБОР ДИСКОВ</li>
+          </ul>
+          <div class="content row">
+            <div class="left_col col-md-9">
+              <div class="box active">
+                <div class="form_car_main">
+                  <div class="bx-filter bx-blue">
+                    <div class="bx-filter-section">
+                      <form action="">
+                        <div class="row">
+                          <div class="col-xs-4">
+                            <div class="col-lg-12 bx-filter-parameters-box bx-active">
+                              <select name="" id="">
+                                <option value="">Производитель</option>
+                                <option value="">Значение 1</option>
+                                <option value="">Значение 2</option>
+                              </select>
+                            </div>
+                            <div class="col-lg-12 bx-filter-parameters-box bx-active">
+                              <select name="" id="">
+                                <option value="">Сезон</option>
+                                <option value="">Значение 1</option>
+                                <option value="">Значение 2</option>
+                              </select>
+                            </div>
+                            <div class="col-lg-12 bx-filter-parameters-box bx-active">
+                              <select name="" id="">
+                                <option value="">Ширина</option>
+                                <option value="">Значение 1</option>
+                                <option value="">Значение 2</option>
+                              </select>
+                            </div>
+                            <div class="col-lg-12 bx-filter-parameters-box bx-active">
+                              <select name="" id="">
+                                <option value="">Высота</option>
+                                <option value="">Значение 1</option>
+                                <option value="">Значение 2</option>
+                              </select>
+                            </div>
+                            <div class="col-lg-12 bx-filter-parameters-box bx-active">
+                              <select name="" id="">
+                                <option value="">PSD</option>
+                                <option value="">Значение 1</option>
+                                <option value="">Значение 2</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-xs-4">
+                            <div class="checkbox-group">
+                              <div class="checkbox-wrapper">
+                                <div class="checkbox-wrapper-vl">Технология RunFlat 
+                                    <div class="qes"><span data-tooltipleft="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum eius, commodi cumque reiciendis non optio, laudantium inventore ratione nam. Minus."></span>
+                                    </div>
+                                </div>
+                                <div class="checkbox-input">
+                                    <div class="checkbox checkbox-hiden">
+                                        <input type="checkbox" value="Y" name="tyres_sport_paket"
+                                               id="input1">
+                                        <label data-role="label_arrFilter_60_4194326291"
+                                               class="bx-filter-param-label " for="input1">
+                                            <span class="bx-filter-input-checkbox"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="checkbox-group">
+                              <div class="checkbox-wrapper">
+                                <div class="checkbox-wrapper-vl">XL 
+                                    <div class="qes"><span data-tooltipleft="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum eius, commodi cumque reiciendis non optio, laudantium inventore ratione nam. Minus."></span>
+                                    </div>
+                                </div>
+                                <div class="checkbox-input">
+                                    <div class="checkbox checkbox-hiden">
+                                        <input type="checkbox" value="Y" name="tyres_sport_paket"
+                                               id="input2">
+                                        <label data-role="label_arrFilter_60_4194326291"
+                                               class="bx-filter-param-label " for="input2">
+                                            <span class="bx-filter-input-checkbox"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="checkbox-group">
+                              <div class="checkbox-wrapper">
+                                <div class="checkbox-wrapper-vl">SUV
+                                    <div class="qes"><span data-tooltipleft="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum eius, commodi cumque reiciendis non optio, laudantium inventore ratione nam. Minus."></span>
+                                    </div>
+                                </div>
+                                <div class="checkbox-input">
+                                    <div class="checkbox checkbox-hiden">
+                                        <input type="checkbox" value="Y" name="tyres_sport_paket"
+                                               id="input3">
+                                        <label data-role="label_arrFilter_60_4194326291"
+                                               class="bx-filter-param-label " for="input3">
+                                            <span class="bx-filter-input-checkbox"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="checkbox-group">
+                              <div class="checkbox-wrapper">
+                                <div class="checkbox-wrapper-vl">Спорт пакет
+                                    <div class="qes"><span data-tooltipleft="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum eius, commodi cumque reiciendis non optio, laudantium inventore ratione nam. Minus."></span>
+                                    </div>
+                                </div>
+                                <div class="checkbox-input">
+                                    <div class="checkbox checkbox-hiden">
+                                        <input type="checkbox" value="Y" name="tyres_sport_paket"
+                                               id="input4">
+                                        <label data-role="label_arrFilter_60_4194326291"
+                                               class="bx-filter-param-label " for="input4">
+                                            <span class="bx-filter-input-checkbox"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-4">
+                            <div class="col-lg-12 bx-filter-parameters-box bx-active">
+                              <select name="" id="">
+                                <option value="">Ширина</option>
+                                <option value="">Значение 1</option>
+                                <option value="">Значение 2</option>
+                              </select>
+                            </div>
+                            <div class="col-lg-12 bx-filter-parameters-box bx-active">
+                              <select name="" id="">
+                                <option value="">Высота</option>
+                                <option value="">Значение 1</option>
+                                <option value="">Значение 2</option>
+                              </select>
+                            </div>
+                            <div class="col-lg-12 bx-filter-parameters-box bx-active">
+                              <select name="" id="">
+                                <option value="">Диаметр</option>
+                                <option value="">Значение 1</option>
+                                <option value="">Значение 2</option>
+                              </select>
+                            </div>
+                            <div class="col-lg-12 bx-filter-parameters-box bx-active">
+                              <div class="filter-submit-wrapper">
+                                <div class="row">
+                                      <div class="col-xs-12 bx-filter-button-box">
+                                          <p>
+                                              <a href="#tyres-calculator" class="fancybox">Шинный калькулятор</a>
+                                              <a href="/bycars/">Подбор по автомобилю</a>
+                                          </p>
+                                          <div class="bx-filter-block">
+                                              <div class="bx-filter-parameters-box-container">
+                                                  <input class="btn btn-submit" type="button" id="set_filter" name="set_filter" value="Показать">
+                                                  <div class="bx-filter-popup-result left" id="modef" style="display:none">
+                                                      Выбрано: <span id="modef_num">0</span>                                                <span class="arrow"></span>
+                                                      <br>
+                                                      <a href="/tyres/all/filter/clear/apply/" target="">Показать</a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="clb"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="form_car_main">
+                  <div class="bx-filter bx-blue">
+                    <div class="bx-filter-section">
+                      <form action="">
+                        <div class="row">
+                          <div class="col-xs-4">
+                            <div class="col-lg-12 bx-filter-parameters-box bx-active">
+                              <select name="" id="">
+                                <option value="">Производитель</option>
+                                <option value="">Значение 1</option>
+                                <option value="">Значение 2</option>
+                              </select>
+                            </div>
+                            <div class="col-lg-12 bx-filter-parameters-box bx-active">
+                              <select name="" id="">
+                                <option value="">Сезон</option>
+                                <option value="">Значение 1</option>
+                                <option value="">Значение 2</option>
+                              </select>
+                            </div>
+                            <div class="col-lg-12 bx-filter-parameters-box bx-active">
+                              <select name="" id="">
+                                <option value="">Ширина</option>
+                                <option value="">Значение 1</option>
+                                <option value="">Значение 2</option>
+                              </select>
+                            </div>
+                            <div class="col-lg-12 bx-filter-parameters-box bx-active">
+                              <select name="" id="">
+                                <option value="">Высота</option>
+                                <option value="">Значение 1</option>
+                                <option value="">Значение 2</option>
+                              </select>
+                            </div>
+                            <div class="col-lg-12 bx-filter-parameters-box bx-active">
+                              <select name="" id="">
+                                <option value="">PSD</option>
+                                <option value="">Значение 1</option>
+                                <option value="">Значение 2</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-xs-4">
+                            <div class="checkbox-group">
+                              <select name="" id="">
+                                <option value="">DIA</option>
+                                <option value="">Значение 1</option>
+                                <option value="">Значение 2</option>
+                              </select>
+                            </div>
+                            <div class="checkbox-group">
+                              <select name="" id="">
+                                <option value="">ET</option>
+                                <option value="">Значение 1</option>
+                                <option value="">Значение 2</option>
+                              </select>
+                            </div>
+                            <div class="checkbox-group">
+                              <select name="" id="">
+                                <option value="">ET+</option>
+                                <option value="">Значение 1</option>
+                                <option value="">Значение 2</option>
+                              </select>
+                            </div>
+                            
+                            <div class="checkbox-group">
+                              <div class="checkbox-wrapper">
+                                <div class="checkbox-wrapper-vl">DIA+
+                                    <div class="qes"><span data-tooltipleft="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum eius, commodi cumque reiciendis non optio, laudantium inventore ratione nam. Minus."></span>
+                                    </div>
+                                </div>
+                                <div class="checkbox-input">
+                                    <div class="checkbox checkbox-hiden">
+                                        <input type="checkbox" value="Y" name="tyres_sport_paket"
+                                               id="input10">
+                                        <label data-role="label_arrFilter_60_4194326291"
+                                               class="bx-filter-param-label " for="input10">
+                                            <span class="bx-filter-input-checkbox"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="checkbox-group">
+                              <div class="checkbox-wrapper">
+                                <div class="checkbox-wrapper-vl">Спорт пакет
+                                    <div class="qes"><span data-tooltipleft="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum eius, commodi cumque reiciendis non optio, laudantium inventore ratione nam. Minus."></span>
+                                    </div>
+                                </div>
+                                <div class="checkbox-input">
+                                    <div class="checkbox checkbox-hiden">
+                                        <input type="checkbox" value="Y" name="tyres_sport_paket"
+                                               id="input11">
+                                        <label data-role="label_arrFilter_60_4194326291"
+                                               class="bx-filter-param-label " for="input11">
+                                            <span class="bx-filter-input-checkbox"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-4">
+                            <div class="col-lg-12 bx-filter-parameters-box bx-active">
+                              <select name="" id="">
+                                <option value="">Ширина</option>
+                                <option value="">Значение 1</option>
+                                <option value="">Значение 2</option>
+                              </select>
+                            </div>
+                            <div class="col-lg-12 bx-filter-parameters-box bx-active">
+                              <select name="" id="">
+                                <option value="">ET</option>
+                                <option value="">Значение 1</option>
+                                <option value="">Значение 2</option>
+                              </select>
+                            </div>
+                            <div class="col-lg-12 bx-filter-parameters-box bx-active">
+                              <select name="" id="">
+                                <option value="">ET+</option>
+                                <option value="">Значение 1</option>
+                                <option value="">Значение 2</option>
+                              </select>
+                            </div>
+                            <div class="col-lg-12 bx-filter-parameters-box bx-active">
+                              <div class="filter-submit-wrapper">
+                                <div class="row">
+                                      <div class="col-xs-12 bx-filter-button-box">
+                                          <p>
+                                              <a href="#tyres-calculator" class="fancybox">Шинный калькулятор</a>
+                                              <a href="/bycars/">Подбор по автомобилю</a>
+                                          </p>
+                                          <div class="bx-filter-block">
+                                              <div class="bx-filter-parameters-box-container">
+                                                  <input class="btn btn-submit" type="button" id="set_filter" name="set_filter" value="Показать">
+                                                  <div class="bx-filter-popup-result left" id="modef" style="display:none">
+                                                      Выбрано: <span id="modef_num">0</span>                                                <span class="arrow"></span>
+                                                      <br>
+                                                      <a href="/tyres/all/filter/clear/apply/" target="">Показать</a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="clb"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bestsellers">
+                <div class="title">
+                  <h2>Ваши заказы</h2> 
+                  <div class="pagin">
+                    <ul>
+                      <li class="js-tab4 active"><a href="#">1</a></li>
+                      <li class="js-tab5"><a href="#">2</a></li>
+                      <li class="js-tab6"><a href="#">3</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="products-carousel">
+                  <div class="js_tab js_tab4 active_flex">
+                    <div class="recommend-item hit">
+                      <div>
+                        <a href="/tyres/federal/himalaya_suv_235_50_r18/">
+                          <img src="images/no-photo.jpg" class="resp-img" alt="HIMALAYA SUV 235/50 R18 T">
+                        </a>
+                      </div>
+                      <p>
+                        <a href="/tyres/federal/himalaya_suv_235_50_r18/">
+                          HIMALAYA SUV 235/50 R18 T       </a>
+                      </p>
+                    </div>
+                    <div class="recommend-item hit">
+                      <div>
+                        <a href="/tyres/federal/himalaya_ws2_225_60_r16/">
+                          <img src="images/no-photo.jpg" class="resp-img" alt="HIMALAYA WS2 225/60 R16 T">
+                        </a>
+                      </div>
+                      <p>
+                        <a href="/tyres/federal/himalaya_ws2_225_60_r16/">
+                          HIMALAYA WS2 225/60 R16 T       </a>
+                      </p>
+                    </div>
+                    <div class="recommend-item hit">
+                      <div>
+                        <a href="/tyres/continental/econtact_215_70_r16/">
+                          <img src="images/no-photo.jpg" class="resp-img" alt="ECONTACT 215/70 R16 T">
+                        </a>
+                      </div>
+                      <p>
+                        <a href="/tyres/continental/econtact_215_70_r16/">
+                          ECONTACT 215/70 R16 T       </a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="js_tab js_tab5">
+                    <div class="recommend-item hit">
+                      <div>
+                        <a href="/tyres/federal/himalaya_suv_235_50_r18/">
+                          <img src="images/no-photo.jpg" class="resp-img" alt="HIMALAYA SUV 235/50 R18 T">
+                        </a>
+                      </div>
+                      <p>
+                        <a href="/tyres/federal/himalaya_suv_235_50_r18/">
+                          HIMALAYA SUV 235/50 R18 T       </a>
+                      </p>
+                    </div>
+                    <div class="recommend-item hit">
+                      <div>
+                        <a href="/tyres/federal/himalaya_ws2_225_60_r16/">
+                          <img src="images/no-photo.jpg" class="resp-img" alt="HIMALAYA WS2 225/60 R16 T">
+                        </a>
+                      </div>
+                      <p>
+                        <a href="/tyres/federal/himalaya_ws2_225_60_r16/">
+                          HIMALAYA WS2 225/60 R16 T       </a>
+                      </p>
+                    </div>
+                    <div class="recommend-item hit">
+                      <div>
+                        <a href="/tyres/continental/econtact_215_70_r16/">
+                          <img src="images/no-photo.jpg" class="resp-img" alt="ECONTACT 215/70 R16 T">
+                        </a>
+                      </div>
+                      <p>
+                        <a href="/tyres/continental/econtact_215_70_r16/">
+                          ECONTACT 215/70 R16 T       </a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="js_tab js_tab6">
+                    <div class="recommend-item hit">
+                      <div>
+                        <a href="/tyres/federal/himalaya_ws2_225_60_r16/">
+                          <img src="images/no-photo.jpg" class="resp-img" alt="HIMALAYA WS2 225/60 R16 T">
+                        </a>
+                      </div>
+                      <p>
+                        <a href="/tyres/federal/himalaya_ws2_225_60_r16/">
+                          HIMALAYA WS2 225/60 R16 T       </a>
+                      </p>
+                    </div>
+                    <div class="recommend-item hit">
+                      <div>
+                        <a href="/tyres/continental/econtact_215_70_r16/">
+                          <img src="images/no-photo.jpg" class="resp-img" alt="ECONTACT 215/70 R16 T">
+                        </a>
+                      </div>
+                      <p>
+                        <a href="/tyres/continental/econtact_215_70_r16/">
+                          ECONTACT 215/70 R16 T       </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bestsellers">
+                <div class="strip"></div>
+                <div class="partners partners-main">
+                  <div class="row">
+                    <div class="col-sm-3 col-xs-6 item">
+                      <div class="partners-main-img">
+                        <a href="/tyres/yokohama/">
+                            <img src="/upload/iblock/a2e/a2e886d0aa48dd4b667d251e235e8a14.jpg" alt="YOKOHAMA">
+                        </a>
+                      </div>
+                      <a href="/tyres/yokohama/">
+                        <h3>
+                            Шины <span>YOKOHAMA<span class="items-quantity">70</span></span>
+                        </h3>
+                      </a>
+                       <div class="manuf_links">
+                          <p>
+                            <a href="/tyres/yokohama/c_drive_ac01_215_65_r15/">C.DRIVE AC01 215/65 R15 H</a></p>
+                          <p>
+                          <a href="/tyres/yokohama/geolandar_g056_215_70_r15/">GEOLANDAR G056 215/70 R15 H</a></p>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 item">
+                      <div class="partners-main-img">
+                        <a href="/tyres/yokohama/">
+                            <img src="/upload/iblock/a2e/a2e886d0aa48dd4b667d251e235e8a14.jpg" alt="YOKOHAMA">
+                        </a>
+                      </div>
+                      <a href="/tyres/yokohama/">
+                        <h3>
+                            Шины <span>YOKOHAMA<span class="items-quantity">70</span></span>
+                        </h3>
+                      </a>
+                       <div class="manuf_links">
+                          <p>
+                            <a href="/tyres/yokohama/c_drive_ac01_215_65_r15/">C.DRIVE AC01 215/65 R15 H</a></p>
+                          <p>
+                          <a href="/tyres/yokohama/geolandar_g056_215_70_r15/">GEOLANDAR G056 215/70 R15 H</a></p>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 item">
+                      <div class="partners-main-img">
+                        <a href="/tyres/yokohama/">
+                            <img src="/upload/iblock/a2e/a2e886d0aa48dd4b667d251e235e8a14.jpg" alt="YOKOHAMA">
+                        </a>
+                      </div>
+                      <a href="/tyres/yokohama/">
+                        <h3>
+                            Шины <span>YOKOHAMA<span class="items-quantity">70</span></span>
+                        </h3>
+                      </a>
+                       <div class="manuf_links">
+                          <p>
+                            <a href="/tyres/yokohama/c_drive_ac01_215_65_r15/">C.DRIVE AC01 215/65 R15 H</a></p>
+                          <p>
+                          <a href="/tyres/yokohama/geolandar_g056_215_70_r15/">GEOLANDAR G056 215/70 R15 H</a></p>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 item">
+                      <div class="partners-main-img">
+                        <a href="/tyres/yokohama/">
+                            <img src="/upload/iblock/a2e/a2e886d0aa48dd4b667d251e235e8a14.jpg" alt="YOKOHAMA">
+                        </a>
+                      </div>
+                      <a href="/tyres/yokohama/">
+                        <h3>
+                            Шины <span>YOKOHAMA<span class="items-quantity">70</span></span>
+                        </h3>
+                      </a>
+                       <div class="manuf_links">
+                          <p>
+                            <a href="/tyres/yokohama/c_drive_ac01_215_65_r15/">C.DRIVE AC01 215/65 R15 H</a></p>
+                          <p>
+                          <a href="/tyres/yokohama/geolandar_g056_215_70_r15/">GEOLANDAR G056 215/70 R15 H</a></p>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="stripline"></div>
+                    <div class="col-sm-3 col-xs-6 item">
+                      <div class="partners-main-img">
+                        <a href="/tyres/yokohama/">
+                            <img src="/upload/iblock/a2e/a2e886d0aa48dd4b667d251e235e8a14.jpg" alt="YOKOHAMA">
+                        </a>
+                      </div>
+                      <a href="/tyres/yokohama/">
+                        <h3>
+                            Шины <span>YOKOHAMA<span class="items-quantity">70</span></span>
+                        </h3>
+                      </a>
+                       <div class="manuf_links">
+                          <p>
+                            <a href="/tyres/yokohama/c_drive_ac01_215_65_r15/">C.DRIVE AC01 215/65 R15 H</a></p>
+                          <p>
+                          <a href="/tyres/yokohama/geolandar_g056_215_70_r15/">GEOLANDAR G056 215/70 R15 H</a></p>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 item">
+                      <div class="partners-main-img">
+                        <a href="/tyres/yokohama/">
+                            <img src="/upload/iblock/a2e/a2e886d0aa48dd4b667d251e235e8a14.jpg" alt="YOKOHAMA">
+                        </a>
+                      </div>
+                      <a href="/tyres/yokohama/">
+                        <h3>
+                            Шины <span>YOKOHAMA<span class="items-quantity">70</span></span>
+                        </h3>
+                      </a>
+                       <div class="manuf_links">
+                          <p>
+                            <a href="/tyres/yokohama/c_drive_ac01_215_65_r15/">C.DRIVE AC01 215/65 R15 H</a></p>
+                          <p>
+                          <a href="/tyres/yokohama/geolandar_g056_215_70_r15/">GEOLANDAR G056 215/70 R15 H</a></p>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 item">
+                      <div class="partners-main-img">
+                        <a href="/tyres/yokohama/">
+                            <img src="/upload/iblock/a2e/a2e886d0aa48dd4b667d251e235e8a14.jpg" alt="YOKOHAMA">
+                        </a>
+                      </div>
+                      <a href="/tyres/yokohama/">
+                        <h3>
+                            Шины <span>YOKOHAMA<span class="items-quantity">70</span></span>
+                        </h3>
+                      </a>
+                       <div class="manuf_links">
+                          <p>
+                            <a href="/tyres/yokohama/c_drive_ac01_215_65_r15/">C.DRIVE AC01 215/65 R15 H</a></p>
+                          <p>
+                          <a href="/tyres/yokohama/geolandar_g056_215_70_r15/">GEOLANDAR G056 215/70 R15 H</a></p>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 item">
+                      <div class="partners-main-img">
+                        <a href="/tyres/yokohama/">
+                            <img src="/upload/iblock/a2e/a2e886d0aa48dd4b667d251e235e8a14.jpg" alt="YOKOHAMA">
+                        </a>
+                      </div>
+                      <a href="/tyres/yokohama/">
+                        <h3>
+                            Шины <span>YOKOHAMA<span class="items-quantity">70</span></span>
+                        </h3>
+                      </a>
+                       <div class="manuf_links">
+                          <p>
+                            <a href="/tyres/yokohama/c_drive_ac01_215_65_r15/">C.DRIVE AC01 215/65 R15 H</a></p>
+                          <p>
+                          <a href="/tyres/yokohama/geolandar_g056_215_70_r15/">GEOLANDAR G056 215/70 R15 H</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="stripline"></div>
+                <div class="strip strip-margin"></div>
+              </div>
+              <div class="bestsellers">
+                <div class="title">
+                  <h2>Хиты продаж</h2> 
+                  <div class="pagin">
+                    <ul>
+                      <li class="js-tab1 active"><a href="#">1</a></li>
+                      <li class="js-tab2"><a href="#">2</a></li>
+                      <li class="js-tab3"><a href="#">3</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="products-carousel">
+                  <div class="js_tab js_tab1 active_flex">
+                    <div class="recommend-item hit" id="bx_3966226736_174340">
+                      <div>
+                        <a href="/tyres/bridgestone/dueler_a_t_d693_30_9_5_r15/">
+                          <img src="/upload/iblock/89c/89c3e47b100aa13753180c6173e53efe.jpg" alt="DUELER A/T D693 30/9.5 R15 *">
+                        </a>
+                      </div>
+                      <p>
+                        <a href="/tyres/bridgestone/dueler_a_t_d693_30_9_5_r15/">
+                          DUELER A/T D693 30/9.5 R15 *        </a>
+                      </p>
+                    </div>
+                    <div class="recommend-item hit" id="bx_3966226736_174338">
+                      <div>
+                        <a href="/tyres/federal/himalaya_suv_235_50_r18/">
+                          <img src="images/no-photo.jpg" class="resp-img" alt="HIMALAYA SUV 235/50 R18 T">
+                        </a>
+                      </div>
+                      <p>
+                        <a href="/tyres/federal/himalaya_suv_235_50_r18/">
+                          HIMALAYA SUV 235/50 R18 T       </a>
+                      </p>
+                    </div>
+                    <div class="recommend-item hit">
+                      <div>
+                        <a href="/tyres/federal/himalaya_ws2_225_60_r16/">
+                          <img src="images/no-photo.jpg" class="resp-img" alt="HIMALAYA WS2 225/60 R16 T">
+                        </a>
+                      </div>
+                      <p>
+                        <a href="/tyres/federal/himalaya_ws2_225_60_r16/">
+                          HIMALAYA WS2 225/60 R16 T       </a>
+                      </p>
+                    </div>
+                    <div class="recommend-item hit">
+                      <div>
+                        <a href="/tyres/toyo/proxes_c1s_245_45_r19/">
+                          <img src="/upload/iblock/9fd/9fd03b4915af8a9242cfcb3f982f5e0f.jpg" alt="PROXES C1S 245/45 R19 W">
+                        </a>
+                      </div>
+                      <p>
+                        <a href="/tyres/toyo/proxes_c1s_245_45_r19/">
+                          PROXES C1S 245/45 R19 W       </a>
+                      </p>
+                    </div>
+                    <div class="recommend-item hit">
+                      <div>
+                        <a href="/tyres/continental/econtact_215_70_r16/">
+                          <img src="images/no-photo.jpg" class="resp-img" alt="ECONTACT 215/70 R16 T">
+                        </a>
+                      </div>
+                      <p>
+                        <a href="/tyres/continental/econtact_215_70_r16/">
+                          ECONTACT 215/70 R16 T       </a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="js_tab js_tab2">
+                    <div class="recommend-item hit" id="bx_3966226736_174338">
+                      <div>
+                        <a href="/tyres/federal/himalaya_suv_235_50_r18/">
+                          <img src="images/no-photo.jpg" class="resp-img" alt="HIMALAYA SUV 235/50 R18 T">
+                        </a>
+                      </div>
+                      <p>
+                        <a href="/tyres/federal/himalaya_suv_235_50_r18/">
+                          HIMALAYA SUV 235/50 R18 T       </a>
+                      </p>
+                    </div>
+                    <div class="recommend-item hit">
+                      <div>
+                        <a href="/tyres/federal/himalaya_ws2_225_60_r16/">
+                          <img src="images/no-photo.jpg" class="resp-img" alt="HIMALAYA WS2 225/60 R16 T">
+                        </a>
+                      </div>
+                      <p>
+                        <a href="/tyres/federal/himalaya_ws2_225_60_r16/">
+                          HIMALAYA WS2 225/60 R16 T       </a>
+                      </p>
+                    </div>
+                    <div class="recommend-item hit">
+                      <div>
+                        <a href="/tyres/toyo/proxes_c1s_245_45_r19/">
+                          <img src="/upload/iblock/9fd/9fd03b4915af8a9242cfcb3f982f5e0f.jpg" alt="PROXES C1S 245/45 R19 W">
+                        </a>
+                      </div>
+                      <p>
+                        <a href="/tyres/toyo/proxes_c1s_245_45_r19/">
+                          PROXES C1S 245/45 R19 W       </a>
+                      </p>
+                    </div>
+                    <div class="recommend-item hit">
+                      <div>
+                        <a href="/tyres/continental/econtact_215_70_r16/">
+                          <img src="images/no-photo.jpg" class="resp-img" alt="ECONTACT 215/70 R16 T">
+                        </a>
+                      </div>
+                      <p>
+                        <a href="/tyres/continental/econtact_215_70_r16/">
+                          ECONTACT 215/70 R16 T       </a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="js_tab js_tab3">
+                    <div class="recommend-item hit">
+                      <div>
+                        <a href="/tyres/federal/himalaya_ws2_225_60_r16/">
+                          <img src="images/no-photo.jpg" class="resp-img" alt="HIMALAYA WS2 225/60 R16 T">
+                        </a>
+                      </div>
+                      <p>
+                        <a href="/tyres/federal/himalaya_ws2_225_60_r16/">
+                          HIMALAYA WS2 225/60 R16 T       </a>
+                      </p>
+                    </div>
+                    <div class="recommend-item hit">
+                      <div>
+                        <a href="/tyres/toyo/proxes_c1s_245_45_r19/">
+                          <img src="/upload/iblock/9fd/9fd03b4915af8a9242cfcb3f982f5e0f.jpg" alt="PROXES C1S 245/45 R19 W">
+                        </a>
+                      </div>
+                      <p>
+                        <a href="/tyres/toyo/proxes_c1s_245_45_r19/">
+                          PROXES C1S 245/45 R19 W       </a>
+                      </p>
+                    </div>
+                    <div class="recommend-item hit">
+                      <div>
+                        <a href="/tyres/continental/econtact_215_70_r16/">
+                          <img src="images/no-photo.jpg" class="resp-img" alt="ECONTACT 215/70 R16 T">
+                        </a>
+                      </div>
+                      <p>
+                        <a href="/tyres/continental/econtact_215_70_r16/">
+                          ECONTACT 215/70 R16 T       </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="des">
+                  <h2>Оптимальные шины и диски: быстро, надежно, недорого</h2>
+                  <div class="wrapper">
+                      <div class="col">
+                          <div class="img col-left">
+                              <div><img src="images/des/img1.jpg" alt=""></div>
+                              <img src="images/des/img2.jpg" alt="">
+                          </div>
+                          <div class="text">
+
+                              <p>Склад Шин предлагает резину и диски для легковых, грузовых автомобилей и
+                                  внедорожников всех марок. <br>
+                                  С 1997 года мы работаем для того, чтобы вы могли купить сертифицированные шины
+                                  в СПб или заказать доставку в любом другом городе без потери времени и
+                                  переплат.
+                              </p>
+
+                              <p>Мы работаем с минимальными издержками и сотрудничаем с крупными поставщиками,
+                                  поэтому предлагаем разумные цены на весь ассортимент. А благодаря скидкам и
+                                  акциям дешево продаются даже шины премиальных марок.
+                              </p>
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="img col-right">
+                              <img src="images/des/img3.jpg" alt="">
+                          </div>
+                          <div class="text">
+                              <p>Не знаете, какие колеса нужны? Укажите модель авто и получите список
+                                  подходящих вариантов. Хотите купить шины или диски другого размера
+                                  воспользуйтесь шинным калькулятором. Нужны шины ранфлет, шины с защитой
+                                  диска воспользуйтесь системой фильтров. <br>
+                                  Вам требуется спорт пакет шин или дисков, то и здесь наша система фильтрации
+                                  вам поможет.С нашей системой фильтрации задача купить
+                                  резину и диски в СПб и по всей стране решается в несколько кликов.</p>
+
+                              <p>Мы делаем все, чтобы вождение было безопасным, а приобретение шин – выгодным и
+                                  простым.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="right_col col-md-3 hidden-sm-main">
+              <div class="row">
+                  <div class="main_forms">
+                      <div class="right_form">
+                          <form name="searchByOrder">
+                              <div class="row">
+                                  <input type="submit" value="" class="sorder"
+                                         style="background: url(images/menu/status.png);width: 39px;height: 42px;">
+                                  <span>
+                                      <input type="text" placeholder="Статус заказа">
+                                      <button></button>
+                                  </span>
+                              </div>
+                          </form>
+                          <form name="searchByArticle" method="get" action="/search/index.php">
+                              <div class="row">
+                                  <input type="submit" value="">
+                                  <span>
+                                      <input type="text" name="articul" placeholder="Поиск по артикулу">
+                                      <button></button>
+                                  </span>
+                              </div>
+                          </form>
+                      </div>
+                      <div class="back_call">
+                         <div class="callback-main">
+                            <span class="c-back-icon">
+                                <img src="images/menu/callback.png">
+                            </span>
+                            <h4>Обратный звонок</h4>
+                            <form name="callback">
+                                <input type="hidden" name="formID" value="fac7824f0e44c02b60e12dd769fef36a">
+                                <input type="text" name="name" placeholder="Ваше имя">
+                                <input type="text" name="phone" placeholder="+7 (ххх) ххх-хх-хх" required="required">
+                                <input type="checkbox" id="callbackcheck7" name="callbackcheck" checked="" style="display: none;">
+                                <label for="callbackcheck7"><span></span>Даю согласие на обработку</label>
+                            </form>
+                            <p class="callback-agreement"><a href="#">персональных данных</a></p>
+                            <a href="#" class="callback-submit">Перезвоните мне</a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="main_news">
+                    <div class="title-news"><a href="/news/"><h2>новости</h2></a></div>
+
+                    <ul>
+                      
+                    <li>
+                        <div class="img">
+                            <img src="/upload/iblock/266/266bba7505fa9ff9674016b8c59c9db3.png" alt="">
+                        </div>
+                        <div class="text">
+                            <p>
+                                <a href="https://www.google.com.ua/" rel="nofollow" target="_blank">dasdasdddsdsada</a>
+                                <span>18.11.2017</span>
+                            </p>
+                        </div>
+                    </li>
+
+                      
+                    <li>
+                        <div class="img">
+                            <img src="images/no-photo.jpg" class="resp-img" alt="">
+                        </div>
+                        <div class="text">
+                            <p>
+                                <a href="/news/common/test/" rel="nofollow" target="_blank">test</a>
+                                <span>18.11.2017</span>
+                            </p>
+                        </div>
+                    </li>
+
+                      
+                    <li>
+                        <div class="img">
+                            <img src="images/no-photo.jpg" class="resp-img" alt="">
+                        </div>
+                        <div class="text">
+                            <p>
+                                <a href="/news/common/testovaya-novost/" rel="nofollow" target="_blank">тестовая новость</a>
+                                <span>18.11.2017</span>
+                            </p>
+                        </div>
+                    </li>
+
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <a class="logo" href="/">
+                    <img src="images/menu/flogo.png" alt="logo">
+                </a>
+                <div class="copi">«Sklad-shin.ru» Все права защищены.</div>
+            </div>
+            <div class="col-md-5 col-sm-6 col-xs-6">
+                <a class="link_map" href="/sitemap/">Карта сайта</a>
+                <div class="text">Сайт носит исключительно информационный характер, и ни при каких условиях
+                    информация, размещенная на сайте, не является публичной офертой, определяемой положениями
+                    Статьи 437 Гражданского кодекса РФ.
+                </div>
+            </div>
+            <div class="col-md-3 col-md-offset-1 col-xs-12">
+                <div class="links">
+                    <p>«Альтера» — <a href="#">Продвижение сайта</a> sklad-shin.ru в Яндекс и Google</p>
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Соглашение об обработке персональных данных</a>
+                </div>
+            </div> 
+        </div>
+    </div>
+</footer>
+
+<div class="successAdd2Cart" style="display: block;">
+    <label>Товар nokian Добавлен в коризну. Количество 4</label><br>
+    <a href="/cart/">перейти в корзину</a><br>
+    <a class="successAdd2Cart-close">продолжить</a>
+</div>
+
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.selectBox.js"></script>
+  <script src="js/jquery.placeholder.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+</body>
+</html>

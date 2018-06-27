@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Alexander Logachev">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css" />
+    <title>page</title>
+</head>
+<body>
+    <section>
+    <div class="container">
+        <div class="row">
+            <header>
+                <div class="item">
+                    <a class="logo" href="/">
+                        <img src="images/menu/logo.png" alt="logo">
+                    </a>
+                    <div class="phone">
+                        <a href="tel:8 (812) 409-34-64">
+                            <img src="images/menu/stac.png" alt="stacionar">
+                            8 (812) 409-34-64
+                        </a>
+                        <a href="tel:8 (812) 924-32-31">
+                            <img src="images/menu/mob.png" alt="mobile">
+                            8 (812) 924-32-31
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="adress">
+                        <div class="adress__img">
+                            <img src="images/menu/map.png" alt="logo">
+                        </div>
+                        <div class="adress__info">
+                            <p>СПб, Полюстровский пр. 28</p>
+                            <a href="/buyer/contacts/">Карта проезда</a>
+                        </div>
+                    </div>
+                    <div class="bascket basketBlock">
+                        <img src="images/menu/cart.png" alt="logo">
+                        корзина пуста
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="row">
+        <nav class="main-menu">
+            <ul>
+                <li><img src="images/menu/q1.png" alt=""><a href="/tyres/">Шины</a></li>
+                <li><img src="images/menu/q2.png" alt=""><a href="/disks/">Диски</a></li>
+                <li><img src="images/menu/q3.png" alt=""><a href="/accumulators/">Аккумуляторы</a></li>
+                <li><img src="images/menu/q4.png" alt=""><a href="/oil/">Моторные масла</a></li>
+                <li><img src="images/menu/q5.png" alt=""><a href="/accessories/">Аксессуары</a></li>
+                <li><img src="images/menu/q6.png" alt=""><a href="/shinomontage/">Шиномонтаж</a></li>
+                <li><img src="images/menu/q7.png" alt="">
+                    <a href="/buyer/">Покупателю</a>
+                    <ul class="podmenu">
+                        <li>
+                            <a href="/buyer/about/">О магазине</a>
+                        </li>
+                        <li>
+                            <a href="/buyer/warranty/">Гарантия</a>
+                        </li>
+                        <li>
+                            <a href="/buyer/delivery/">Оплата и доставка</a>
+                        </li>
+                        <li>
+                            <a href="/buyer/contacts/">Контакты</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="bread-crumbs"><ul>
+          <li>        
+            <a href="/" title="Главная">
+              Главная
+            </a>
+          </li>
+          <li>        
+            <a href="/accessories/" title="Аксессуары" class="active">
+              Аксессуары
+            </a>
+          </li></ul><span>Обновлено: вчера</span>
+        </div>
+        <div class="col-xs-12 catalog-container">
+          <div class="row catalog-container__flex-row">
+            <div class="col-md-3 col-sm-12">
+              <div class="bx-sidebar-block">
+                <div class="show-filter-btn">
+                  <span>Показать фильтр</span>
+                </div>
+                <div class="form_car">
+                  <div class="bx-filter">
+                    <div class="bx-filter-section container-fluid">
+                      <form action="">
+                        <div class="row">
+                          <div class="col-lg-12 bx-filter-parameters-box bx-active filter-price-box">
+                            <div class="bx-filter-block">
+                              <div class="row bx-filter-parameters-box-container filter-price">
+                                <div class="col-xs-6 bx-filter-parameters-box-container-block bx-left">
+                                  <div class="bx-filter-input-container">
+                                    <input type="text" placeholder="от">
+                                  </div>
+                                </div>
+                                <div class="col-xs-6 bx-filter-parameters-box-container-block bx-right">
+                                  <div class="bx-filter-input-container">
+                                    <input type="text" placeholder="до">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-12 bx-filter-parameters-box bx-active filter-price-box">
+                            <select name="" id="">
+                              <option value="">Производитель</option>
+                              <option value="">Значение 1</option>
+                              <option value="">Значение 2</option>
+                              <option value="">Значение 3</option>
+                            </select>
+                          </div>
+                          <div class="col-lg-12 bx-filter-parameters-box bx-active filter-price-box">
+                            <div class="bx-filter-input-container">
+                              <input type="text" placeholder="1. Искомое содержит">
+                            </div>
+                          </div>
+                          <div class="col-lg-12 bx-filter-parameters-box bx-active filter-price-box">
+                            <div class="bx-filter-input-container">
+                              <input type="text" placeholder="2. Искомое содержит">
+                            </div>
+                          </div>
+                          <div class="col-lg-12 bx-filter-parameters-box bx-active filter-price-box">
+                            <div class="bx-filter-input-container">
+                              <input type="text" placeholder="3. Искомое содержит">
+                            </div>
+                          </div>
+                          <div class="col-lg-12 bx-filter-parameters-box bx-active filter-price-box">
+                            <div class="bx-filter-input-container">
+                              <input type="text" placeholder="1. Искомое не содержит">
+                            </div>
+                          </div>
+                          <div class="col-lg-12 bx-filter-parameters-box bx-active filter-price-box">
+                            <div class="bx-filter-input-container">
+                              <input type="text" placeholder="2. Искомое не содержит">
+                            </div>
+                          </div>
+                          <div class="col-lg-12 bx-filter-parameters-box bx-active filter-price-box">
+                            <div class="bx-filter-input-container">
+                              <input type="text" placeholder="3. Искомое не содержит">
+                            </div>
+                          </div>
+                          <div class="col-lg-12 bx-filter-parameters-box bx-active filter-price-box">
+                             <input class="btn btn-submit btn-filter" type="button" value="Показать">
+                          </div>
+                          <div class="col-lg-12 bx-filter-parameters-box bx-active filter-price-box">
+                             <input class="btn btn-submit btn-filter" type="button" value="Сбросить">
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9 col-sm-12">
+
+                  <div class="bx-section-desc bx-blue">
+    <p class="bx-section-desc-post"></p>
+  </div>
+  
+
+<div class="text">
+    </div>
+
+                             <h1 class="section_title">Аксессуары</h1>
+
+
+
+<div class="accessories-categories-block">
+    <ul class="accessories-categories-menu">
+                    <li class="">
+                <a href="/accessories/kolpaki_na_diski/">
+                    <img src="/upload/iblock/60a/60a9807124861eed2514663da4b9b434.png" style="max-height: 31px;" alt="КОЛПАКИ НА ДИСКИ">
+                    <label>КОЛПАКИ НА ДИСКИ</label>
+                </a>
+                                    <ul class="accessories-categories-subMenu">
+                                                    <li class="">
+                                <a href="/accessories/kolpaki_koles_gibkie/">КОЛПАКИ КОЛЕС ГИБКИЕ</a>
+                            </li>
+                                            </ul>
+                            </li>
+                    <li class="">
+                <a href="/accessories/avariynye_aksessuary/">
+                    <img src="/upload/iblock/b6a/b6aa8d1512172d97de9829cbffb9475c.png" style="max-height: 31px;" alt="АВАРИЙНЫЕ АКСЕССУАРЫ">
+                    <label>АВАРИЙНЫЕ АКСЕССУАРЫ</label>
+                </a>
+                                    <ul class="accessories-categories-subMenu">
+                                                    <li class="">
+                                <a href="/accessories/rem_komplekty_shin/">РЕМ. КОМПЛЕКТЫ ШИН</a>
+                            </li>
+                                                    <li class="">
+                                <a href="/accessories/aptechki/">АПТЕЧКИ</a>
+                            </li>
+                                                    <li class="">
+                                <a href="/accessories/domkraty/">ДОМКРАТЫ</a>
+                            </li>
+                                                    <li class="">
+                                <a href="/accessories/znaki_avariynoy_ostanovki/">ЗНАКИ АВАРИЙНОЙ ОСТАНОВКИ</a>
+                            </li>
+                                                    <li class="">
+                                <a href="/accessories/kompressory/">КОМПРЕССОРЫ</a>
+                            </li>
+                                                    <li class="">
+                                <a href="/accessories/nabor_avtomobilista/">НАБОР АВТОМОБИЛИСТА</a>
+                            </li>
+                                                    <li class="">
+                                <a href="/accessories/ognetushiteli/">ОГНЕТУШИТЕЛИ</a>
+                            </li>
+                                                    <li class="">
+                                <a href="/accessories/provoda_puskovye/">ПРОВОДА ПУСКОВЫЕ</a>
+                            </li>
+                                                    <li class="">
+                                <a href="/accessories/trosy_buksirovochnye/">ТРОСЫ БУКСИРОВОЧНЫЕ</a>
+                            </li>
+                                            </ul>
+                            </li>
+                    <li class="">
+                <a href="/accessories/khimiya/">
+                    <img src="/upload/iblock/b02/b02a35be113856f5aa148dbb433b66c9.png" style="max-height: 31px;" alt="ХИМИЯ">
+                    <label>ХИМИЯ</label>
+                </a>
+                                    <ul class="accessories-categories-subMenu">
+                                                    <li class="">
+                                <a href="/accessories/omyvatel_stekl/">ОМЫВАТЕЛЬ СТЕКЛ</a>
+                            </li>
+                                            </ul>
+                            </li>
+                    <li class="">
+                <a href="/accessories/avtokresla/">
+                    <img src="/upload/iblock/5de/5dee8d02fabd6dcfbe52a9e3d721dc58.png" style="max-height: 31px;" alt="АВТОКРЕСЛА">
+                    <label>АВТОКРЕСЛА</label>
+                </a>
+                                    <ul class="accessories-categories-subMenu">
+                                                    <li class="">
+                                <a href="/accessories/bustery/">БУСТЕРЫ</a>
+                            </li>
+                                                    <li class="">
+                                <a href="/accessories/avtokresla/">АВТОКРЕСЛА</a>
+                            </li>
+                                            </ul>
+                            </li>
+                    <li class="">
+                <a href="/accessories/klyuchi/">
+                    <img src="/upload/iblock/51f/51ff7b87a8c3570effd74104fa31e522.png" style="max-height: 31px;" alt="КЛЮЧИ">
+                    <label>КЛЮЧИ</label>
+                </a>
+                                    <ul class="accessories-categories-subMenu">
+                                                    <li class="">
+                                <a href="/accessories/klyuchi_treshchotki/">КЛЮЧИ-ТРЕЩOТКИ</a>
+                            </li>
+                                                    <li class="">
+                                <a href="/accessories/klyuchi_balonnye/">КЛЮЧИ БАЛОННЫЕ</a>
+                            </li>
+                                                    <li class="">
+                                <a href="/accessories/klyuchi_gaechnye_dvukhstoronnie/">КЛЮЧИ ГАЕЧНЫЕ ДВУХСТОРОННИЕ</a>
+                            </li>
+                                                    <li class="">
+                                <a href="/accessories/klyuchi_kombinirovannye/">КЛЮЧИ КОМБИНИРОВАННЫЕ</a>
+                            </li>
+                                                    <li class="">
+                                <a href="/accessories/klyuchi_rozhkovye/">КЛЮЧИ РОЖКОВЫЕ</a>
+                            </li>
+                                                    <li class="">
+                                <a href="/accessories/nabory_klyuchey/">НАБОРЫ КЛЮЧЕЙ</a>
+                            </li>
+                                                    <li class="">
+                                <a href="/accessories/klyuchi_dinamometricheskie/">КЛЮЧИ ДИНАМОМЕТРИЧЕСКИЕ</a>
+                            </li>
+                                            </ul>
+                            </li>
+                    <li class="">
+                <a href="/accessories/avto_kholodilniki/">
+                    <img src="/upload/iblock/027/027f0d8218982402d2acf390355aab34.png" style="max-height: 31px;" alt="АВТО-ХОЛОДИЛЬНИКИ">
+                    <label>АВТО-ХОЛОДИЛЬНИКИ</label>
+                </a>
+                                    <ul class="accessories-categories-subMenu">
+                                                    <li class="">
+                                <a href="/accessories/sumki_kholodilniki/">СУМКИ-ХОЛОДИЛЬНИКИ</a>
+                            </li>
+                                                    <li class="">
+                                <a href="/accessories/kholodilniki_avtomobilnye/">ХОЛОДИЛЬНИКИ АВТОМОБИЛЬНЫЕ</a>
+                            </li>
+                                            </ul>
+                            </li>
+                    <li class="">
+                <a href="/accessories/krepezh/">
+                    <img src="/upload/iblock/fdd/fdde6b70aa435de4757fafddd06be311.png" style="max-height: 31px;" alt="КРЕПЕЖ">
+                    <label>КРЕПЕЖ</label>
+                </a>
+                                    <ul class="accessories-categories-subMenu">
+                                                    <li class="">
+                                <a href="/accessories/koltsa_prostavochnye_supinatory/">КОЛЬЦА ПРОСТАВОЧНЫЕ (СУПИНАТОРЫ)</a>
+                            </li>
+                                                    <li class="">
+                                <a href="/accessories/gayki_kolesnye/">ГАЙКИ КОЛЕСНЫЕ</a>
+                            </li>
+                                                    <li class="">
+                                <a href="/accessories/bolty_kolesnye/">БОЛТЫ КОЛЕСНЫЕ</a>
+                            </li>
+                                                    <li class="">
+                                <a href="/accessories/sekretki_kolesnye_bolty/">СЕКРЕТКИ КОЛЕСНЫЕ БОЛТЫ</a>
+                            </li>
+                                                    <li class="">
+                                <a href="/accessories/sekretki_kolesnye_gayki/">СЕКРЕТКИ КОЛЕСНЫЕ ГАЙКИ</a>
+                            </li>
+                                            </ul>
+                            </li>
+                    <li class="">
+                <a href="/accessories/eshche/">
+                    <img src="/upload/iblock/f3e/f3ea1eeb486518892b261573116a79d5.png" style="max-height: 31px;" alt="ЕЩЕ">
+                    <label>ЕЩЕ</label>
+                </a>
+                                    <ul class="accessories-categories-subMenu">
+                                                    <li class="">
+                                <a href="/accessories/zaryadnye_ustroystva/">ЗАРЯДНЫЕ УСТРОЙСТВА</a>
+                            </li>
+                                                    <li class="">
+                                <a href="/accessories/avtopylesosy/">АВТОПЫЛЕСОСЫ</a>
+                            </li>
+                                                    <li class="">
+                                <a href="/accessories/kanistry/">КАНИСТРЫ</a>
+                            </li>
+                                                    <li class="">
+                                <a href="/accessories/kovriki/">КОВРИКИ</a>
+                            </li>
+                                            </ul>
+                            </li>
+            </ul>
+</div>
+
+<div class="sorting">
+    <span>Сортировать:</span>
+    <ul>
+        <li class="">
+            <a href="/accessories/index.php?sort=price&amp;by=asc">
+                по цене
+                            </a>
+        </li>
+        <li class="">
+            <a href="/accessories/index.php?sort=qnt&amp;by=asc">
+                по наличию
+                            </a>
+        </li>
+        <li class="">
+            <a href="/accessories/index.php?sort=manufacturer&amp;by=asc">
+                по производителю
+                            </a>
+        </li>
+    </ul>
+    <div class="check-wrapper">
+        <div class="check">
+            <input type="radio" id="s1" data-tourl="/accessories/index.php?inStock=Y" name="cc">
+            <label for="s1">В наличии<span></span></label>
+        </div>
+        <div class="check">
+            <input type="radio" id="s2" data-tourl="/accessories/index.php?inStock=more" name="cc">
+            <label for="s2">Остаток от 4 шт.<span></span></label>
+        </div>
+    </div>
+    <div class="view">
+        <span>Вид</span>
+        <ul>
+            <li class="block active" data-tooltipleft="Список"></li>
+            <li class="line" data-tooltipleft="Таблица"></li>
+        </ul>
+    </div>
+</div>
+
+<div class="sorting_bottom">
+    
+
+
+
+    <span>Товары 1        - 30 из 1579</span>
+
+    <div class="nav-pages">
+
+        
+        
+                            <span class="nav-current-page">&nbsp;1&nbsp;</span>&nbsp;
+                                
+                            <a href="/accessories/?PAGEN_1=2">2</a>&nbsp;
+                                
+                            <a href="/accessories/?PAGEN_1=3">3</a>&nbsp;
+                                
+                            <a href="/accessories/?PAGEN_1=4">4</a>&nbsp;
+                                
+                            <a href="/accessories/?PAGEN_1=5">5</a>&nbsp;
+                                
+
+                    |&nbsp;<a href="/accessories/?PAGEN_1=2">»</a>&nbsp;|&nbsp;
+            <a href="/accessories/?PAGEN_1=53">Конец</a>&nbsp;
+        
+        
+
+        
+    </div>
+
+</div>
+<div class="cart_product row row-accessories">
+    <div>
+
+        
+          <div class="product_row">
+                <div class="product_image">
+                    <a href="/accessories/klyuchi_rozhkovye/klyuch_rozhkovyy_10x11_ip_026/">
+                        <img src="/upload/iblock/1c0/1c068926551354fb1308e622046cb420.jpg" alt="КЛЮЧ РОЖКОВЫЙ 10X11 ИП-026">
+                    </a>
+                    <p>Артикул:100167232</p>
+                                    </div>
+                
+                <div class="product_name accessories-name">
+                    <a href="/accessories/klyuchi_rozhkovye/klyuch_rozhkovyy_10x11_ip_026/">КЛЮЧ РОЖКОВЫЙ 10X11 ИП-026</a>
+                </div>
+                <div class="status_icon">
+                    <p>
+                                            </p>
+                </div>
+                <div class="product_price">
+                    <div>
+                                                    <div>
+                                <p><span class="today">сегодня</span> &gt; 4 шт.</p>
+                                40.00                                <span>руб.</span>
+                            </div>
+                                            </div>
+                </div>
+                <div class="product_quantity">
+                    <div>
+                                                    <div class="main2basket">
+                                 <span class="number">
+                                    <a href="#minus"></a>
+                                    <input type="text" name="prodCNT" data-id="167232" data-priceid="352823" data-storeid="21" value="4">
+                                    <a href="#plus"></a>
+                                 </span>
+                                <a class="add2basket-list add2basket-btn"></a>
+                            </div>
+                                            </div>
+                </div>
+       
+            </div>
+            <div class="product_row">
+                <div class="product_image">
+                    <a href="/accessories/klyuchi_rozhkovye/klyuch_rozhkovyy_10x11_ip_026/">
+                         <img src="images/no_photo2.png" alt="КЛЮЧ РОЖКОВЫЙ 10X11 ИП-026">
+                    </a>
+                    <p>Артикул:100167232</p>
+                                    </div>
+                
+                <div class="product_name accessories-name">
+                    <a href="/accessories/klyuchi_rozhkovye/klyuch_rozhkovyy_10x11_ip_026/">КЛЮЧ РОЖКОВЫЙ 10X11 ИП-026</a>
+                </div>
+                <div class="status_icon">
+                    <p>
+                                            </p>
+                </div>
+                <div class="product_price">
+                    <div>
+                                                    <div>
+                                <p><span class="today">сегодня</span> &gt; 4 шт.</p>
+                                40.00                                <span>руб.</span>
+                            </div>
+                                            </div>
+                </div>
+                <div class="product_quantity">
+                    <div>
+                                                    <div class="main2basket">
+                                 <span class="number">
+                                    <a href="#minus"></a>
+                                    <input type="text" name="prodCNT" data-id="167232" data-priceid="352823" data-storeid="21" value="4">
+                                    <a href="#plus"></a>
+                                 </span>
+                                <a class="add2basket-list add2basket-btn"></a>
+                            </div>
+                                            </div>
+                </div>
+       
+            </div>
+            <div class="product_row">
+                <div class="product_image">
+                    <a href="/accessories/klyuchi_rozhkovye/klyuch_rozhkovyy_10x11_ip_026/">
+                           <img src="/upload/iblock/1c0/1c068926551354fb1308e622046cb420.jpg" alt="КЛЮЧ РОЖКОВЫЙ 10X11 ИП-026">
+                    </a>
+                    <p>Артикул:100167232</p>
+                                    </div>
+                
+                <div class="product_name accessories-name">
+                    <a href="/accessories/klyuchi_rozhkovye/klyuch_rozhkovyy_10x11_ip_026/">КЛЮЧ РОЖКОВЫЙ 10X11 ИП-026</a>
+                </div>
+                <div class="status_icon">
+                    <p>
+                                            </p>
+                </div>
+                <div class="product_price">
+                    <div>
+                                                    <div>
+                                <p><span class="today">сегодня</span> &gt; 4 шт.</p>
+                                40.00                                <span>руб.</span>
+                            </div>
+                                            </div>
+                </div>
+                <div class="product_quantity">
+                    <div>
+                                                    <div class="main2basket">
+                                 <span class="number">
+                                    <a href="#minus"></a>
+                                    <input type="text" name="prodCNT" data-id="167232" data-priceid="352823" data-storeid="21" value="4">
+                                    <a href="#plus"></a>
+                                 </span>
+                                <a class="add2basket-list add2basket-btn"></a>
+                            </div>
+                                            </div>
+                </div>
+       
+            </div>
+      
+        </div>
+</div>
+<div class="sorting_bottom">
+    
+
+
+
+    <span>Товары 1        - 30 из 1579</span>
+
+    <div class="nav-pages">
+
+        
+        
+                            <span class="nav-current-page">&nbsp;1&nbsp;</span>&nbsp;
+                                
+                            <a href="/accessories/?PAGEN_1=2">2</a>&nbsp;
+                                
+                            <a href="/accessories/?PAGEN_1=3">3</a>&nbsp;
+                                
+                            <a href="/accessories/?PAGEN_1=4">4</a>&nbsp;
+                                
+                            <a href="/accessories/?PAGEN_1=5">5</a>&nbsp;
+                                
+
+                    |&nbsp;<a href="/accessories/?PAGEN_1=2">»</a>&nbsp;|&nbsp;
+            <a href="/accessories/?PAGEN_1=53">Конец</a>&nbsp;
+        
+        
+
+        
+    </div>
+
+</div>
+<div class="text">
+    </div>       
+        
+
+                        <div class="car_tires">
+                    <div class="text">
+                        <h3>Основные размеры шин и литых дисков:</h3>
+    <ul>
+        <li><span>шины R 14</span> (Honda Civic; Chevrolet Lanos)</li>
+        <li><span>шины R15</span> (Chevrolet Aveo, Lacetti; Ford C-Max; Mazda 3, 6; Mitsubishi Lancer, Pajero; Nissan
+            Almera, Pathfinder)
+        </li>
+        <li><span>литые диски R16</span> (Audi A4, A6, TT; BMW Z3; Citroen C4; Ford Focus; ГАЗель; Hummer H3; Hyundai
+            Santa-Fe; Nissan Primera)
+        </li>
+        <li><span>литые диски R17</span> (Audi A8; TrailBlazer; Ford Explorer, Mondeo; Hummer H2; Hyundai Sonata; Nissan
+            Patrol, Qashqai, Teana)
+        </li>
+        <li><span>шины R18</span> (Audi Q7, RS4; BMW X3, 6 Series)</li>
+        <li><span>шины R19</span> (Dodge Magnum)</li>
+    </ul>
+    <p>"Склад Шин" специализируется на оптовых и розничных продажах автомобильных шин.</p>
+    <p>Мы надеемся, что в нашем магазине вы увидите реальный ассортимент автошин по приятной цене.</p>
+    <p>Заказать автошины вы можете прямо сейчас через наш магазин или с 10 до 20 часов по телефону: 8 (812)
+        924-32-31.</p>
+    <p>Наши специалисты помогут вам при выборе автомобильных дисков.</p>
+    <div class="row">
+        <h3>Выбираем автомобильные шины</h3>
+        <p>Со сменой времени года в нашем регионе наступает пора замены автомобильных шин и дисков. Буквально к каждому
+            сезону производители готовят новые более совершенные новинки, а автовладельцы задаются вопросами, какие же
+            шины приобрести в этот раз, стоит ли остановить свой выбор на летних моделях или предпочесть всесезонные
+            образцы. Стоит ли купить новые или экономнее подержанные шины? Предпочесть стандартный вариант или выбрать
+            низкий профиль?</p>
+        <div><img src="&lt;?= SITE_TEMPLATE_PATH ?&gt;/images/car-tires/img3.jpg" width="150" height="92" alt=""></div>
+    </div>
+    <div class="row_bottom">
+        <h3>Автомобильные шины низкого профиля - нужны или нет?</h3>
+        <p>Низкопрофильными шинами называют модели, у которых соотношение высоты профиля колесной шины к ее ширине
+            составляет 70% и менее. Их нельзя назвать бюджетным вариантом, потому что вместе автошинами, вам потребуется
+            приобрести новые диски большего размера. Популярные сегодня низкопрофильные автошины впервые появились в
+            1937 году. Это была новинка от компании <span>Michelin</span>, но машины и дороги того времени были
+            неспособны принять такую резину. Их стали использовать на гоночных треках. Основным преимуществом этой
+            продукции является меньшая раскачка кузова при маневрах, и, как следствие, лучшая управляемость авто. Низкий
+            профиль, предназначенный для обычных легковых машин, в 1977 году предложила компания <span>Pirelli</span>,
+            выпустив легендарные серии P6 и P7. С этого времени каждый производитель автошин имеет в своей
+            ассортиментной линейке низкопрофильные образцы. Например, производством подобных шин занимается фирмы <span>Nokian</span>
+            или RunFlat.</p>
+        <p>Для того, чтобы облегчить выбор, в нашем каталоге подобные шины выделены в отдельную категорию. Наиболее
+            часто эта продукция приобретается владельцами легковых авто, но при необходимости вы легко сможете найти
+            низкопрофильные шины для грузовиков. Отдать предпочтение низкопрофильным покрышкам означает повысить
+            сцепление с дорогой и устойчивость на поворотах, улучшить тормозные свойства авто. Они идеально подходят
+            тем, кто предпочитает агрессивный стиль вождения и основную часть времени ездят по асфальтовому
+            покрытию.</p>
+        <div><img src="&lt;?= SITE_TEMPLATE_PATH ?&gt;/images/car-tires/img4.jpg" width="150" height="202" alt=""></div>
+        <p>Недостатки авто шин с низким профилем являются продолжением их преимуществ. Высокая площадь контакта с
+            дорогой снижает уровень комфорта во время езды. Низкий профиль не подходит владельцам машин с малыми
+            объемами двигателей, так как с увеличением веса покрышки, увеличивается расход топлива. Если машина не
+            оснащена гидроусилителем руля, вы, скорее всего, почувствуете, что автомобиль стал менее легким в
+            управлении. Самым главным недостатком принято считать понижение устойчивости авто на мокрой и заснеженной
+            дороге. Взвесив все за и против, вы сможете остановить свой выбор на наиболее подходящем для вас вариант</p>
+    </div>                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <footer class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <a class="logo" href="/">
+                    <img src="images/menu/flogo.png" alt="logo">
+                </a>
+                <div class="copi">«Sklad-shin.ru» Все права защищены.</div>
+            </div>
+            <div class="col-md-5 col-sm-6 col-xs-6">
+                <a class="link_map" href="/sitemap/">Карта сайта</a>
+                <div class="text">Сайт носит исключительно информационный характер, и ни при каких условиях
+                    информация, размещенная на сайте, не является публичной офертой, определяемой положениями
+                    Статьи 437 Гражданского кодекса РФ.
+                </div>
+            </div>
+            <div class="col-md-3 col-md-offset-1 col-xs-12">
+                <div class="links">
+                    <p>«Альтера» — <a href="#">Продвижение сайта</a> sklad-shin.ru в Яндекс и Google</p>
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Соглашение об обработке персональных данных</a>
+                </div>
+            </div> 
+        </div>
+    </div>
+</footer>
+
+
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.selectBox.js"></script>
+  <script src="js/jquery.placeholder.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,455 @@
+.recommend-item img{
+	max-width: 100%;
+}
+
+.product-list-similar > .product-list-similar-tyres > .cell:nth-child(2) > div,
+.product-list-similar > .product-list-similar-disks > .cell:nth-child(2) > div,
+.product-list-similar > .product-list-similar-accessories > .cell:nth-child(2) > div{
+	max-width: 270px;
+}
+
+.product-list-similar{
+	border-top: 2px solid #999999;
+}
+
+.product-list-similar > .row > .cell{
+	vertical-align: top;
+	border-bottom: 2px solid #999999;
+}
+
+.product-list-similar > .row:hover > .cell{
+	background: #ececec;
+}
+
+.product-list-similar > .row > .cell:nth-child(1){
+	width: 175px;
+	text-align: center;
+	font-size: 12px;
+	color:#333333;
+}
+
+.product-list-similar > .row > .cell:nth-child(2){
+	width: 380px;
+}
+
+.product-list-similar > .row > .cell:nth-child(2) .tyres-icon{
+	text-align: right;
+	max-height: 165px;
+}
+
+.product-list > .row > .cell{
+	padding:15px;
+}
+
+.product-list-similar > .row > .cell:nth-child(1) img {
+	max-width: 100%;
+}
+
+.product-list-manufacture-icon{
+	padding-bottom: 15px;
+	min-height: 40px;
+}
+
+.product-list-similar-a{
+	text-align: right;
+	padding-bottom: 5px;
+}
+
+.product-list-similar-sizes{
+	text-align: right;
+	font-size: 12px;
+	color:#333333;
+}
+
+.product-list-similar .row .cell:nth-child(3){
+	width: 90px;
+}
+
+.product-list-similar .row .cell:nth-child(4){
+	width: 70px;
+	vertical-align: bottom;
+}
+
+.product-list-similar .row .cell:nth-child(5){
+	text-align: right;
+}
+
+.product-list-prices-stock-more,
+.product-list-prices-stock-last{
+	font-size: 12px;
+	color:#333333;
+	padding-bottom: 15px;
+}
+
+.product-list-prices-stock-more span{
+	color:#339933;
+}
+
+.product-list-prices-stock-last span{
+	color:#003399;
+}
+
+
+.product-list-similar-disks .product-list-similar-sizes{
+	padding-bottom: 15px;
+}
+
+
+.successAdd2Cart{
+	display: none;
+	position: fixed;
+	background: #73b573 url('/local/templates/__main/images/checker-white.png') no-repeat;
+	background-position: 12px center;
+	top: 30%;
+	right: 10%;
+	color: white;
+	z-index: 500;
+	width: 240px;
+	min-height: 13px;
+	padding: 15px 15px 15px 50px;
+	font-size: 12px;
+	line-height: 15px;
+	border-radius: 6px;
+}
+
+.basketBlockGreen{
+	display:none;
+	background: #73b573;
+	background-position: 15px 6px;
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	right: 14%;
+	min-width: 155px;
+	height: 81px;
+	z-index: 1000;
+	border-radius: 0px 0 6px 6px;
+}
+
+.basketBlockGreen tr td{
+	padding: 0 5px;
+}
+
+.basketBlockGreen .basketBlockGreenCnt{
+	color: #003399;
+	font-size: 36px;
+	background: white;
+	padding: 4px 7px;
+	display: inline-block;
+	border-radius: 30px;
+	right: 10px;
+	top: 10px;
+	height: 45px;
+	line-height: 38px;
+}
+
+.imgInCart{
+	background: url(/local/templates/__main/images/checker-green.png) no-repeat;
+	width:20px;
+	height:20px;
+	margin: -14px 10px 0px 5px;
+	display:inline-block;
+}
+
+.successAdd2Cart label{
+	font-size: 12px;
+	font-weight: normal;
+	cursor: auto;
+}
+
+.successAdd2Cart a{
+	font-size: 12px;
+	cursor: pointer;
+	color: white;
+	text-decoration: underline;
+}
+
+.selectBox {
+	background:#e8e8e8;
+	border:1px solid #ff9900;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	display: inline-block;
+	position: relative;
+	width:216px;
+	height:33px;
+	text-decoration: none;
+	cursor:pointer;
+}
+
+.selectBox:hover {
+	border-width:2px;
+	text-decoration:none;
+}
+
+.selectBox-label {
+	line-height:31px;
+	color:#000;
+	padding-left:12px;
+}
+
+.selectBox:hover .selectBox-label {
+	line-height:30px;
+	padding-left:11px;
+}
+
+.selectBox-arrow {
+	position: absolute;
+	left: auto;
+	right: 0;
+	top: 0;
+	width:32px;
+	height:31px;
+	overflow: hidden;
+	cursor: pointer;
+	background:url(../images/strelka.png) 0 0 no-repeat;
+}
+
+.selectBox:hover .selectBox-arrow {
+	background-position:bottom;
+	top:-1px;
+	right:-1px;
+}
+
+.selectBox-dropdown-menu {
+	position: absolute;
+	background:#e8e8e8;
+	border:1px solid #ff9900;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	z-index:100000;
+	height: 151px;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+
+.selectBox-dropdown-menu li {
+	display: block;
+	z-index: 10000;
+}
+
+.selectBox-dropdown-menu li a {
+	display: block;
+	padding-left:12px;
+	color:#000;
+	line-height:25px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.selectBox-dropdown-menu li a:hover {
+	color:#000000;
+}
+.accessories-categories-block{
+	border-bottom: 3px solid #e8e8e8;
+	position: relative;
+	background: #ffe4af;
+	margin-bottom: 2px;
+	/*padding-top: 21px;
+	padding-bottom: 20px;
+	padding-left: 36px;
+	padding-right: 36px;*/
+	display: flex;
+	align-items: center;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.acc_image img {
+	max-height: none !important;
+	max-width: 200px !important;
+}
+.accessories-categories-block ul {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 100%;
+	margin-bottom:0;
+}
+
+.accum-name-wrapper {
+	margin-left: 30px;
+}
+
+.accessories-name {
+	padding-top: 36px;
+    padding-left: 26px;
+}
+
+
+
+.accessories-categories-block ul li{
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+}
+
+.accessories-categories-block ul li a{
+	color:#333333;
+	font-size: 12px;
+	width: 110px;
+	display: inline-block;
+	padding-top: 15px;
+	height:105px;
+}
+
+.accessories-categories-block ul li:hover a,
+.accessories-categories-block ul li.selected
+{
+	background: #acd373;
+	border-radius: 6px;
+}
+
+.accessories-categories-block ul li a label{
+	font-weight:normal;
+	/*text-transform: lowercase;*/
+	display:block;
+	margin-top:10px;
+}
+
+ul.accessories-categories-subMenu{
+	display:none;
+}
+
+.accessories-categories-block ul li:hover ul.accessories-categories-subMenu{
+	display:inline-block;
+	position:absolute;
+	width: 280px;
+	background: #ffe5af;
+	z-index: 1000;
+	border: 2px solid #e8e8e8;
+	margin-left: -56px;
+	margin-top: 1px;
+	padding-top:8px;
+	padding-bottom:8px;
+	border-radius:0px 0px 10px 0px ;
+}
+
+.accessories-categories-block ul li:hover ul li{
+	display:block;
+	width:initial;
+
+}
+
+.accessories-categories-block ul li:hover ul li a{
+	width: initial;
+	height: initial;
+	padding: 8px;
+	display: block;
+	margin: 2px 10px;
+}
+
+.accessories-categories-block ul li:hover ul li a:hover,
+.accessories-categories-block ul li:hover ul li.selected2 a{
+	color:#0099ff;
+}
+
+
+.accumulators-icon{
+	font-size:12px;
+}
+.section-filter-img {
+	width: 100%;
+	margin-top: 54px;
+    margin-bottom: 78px !important;
+}
+.section-filter-img img {
+	max-width: 230px;
+	width: 100%;
+}
+.accumulators-icon .accumulators-icon-elem{
+	text-align: left;
+	display: flex;
+	margin-bottom: 5px;
+}
+.oil-params .accumulators-icon-elem {
+	margin-right: 9px;
+}
+.accumulators-icon .accumulators-icon-elem label, .accumulators-icon .accumulators-icon-elem span{
+	display: block;
+	font-weight: normal;
+	color:#666666;
+	padding-right:5px;
+	margin-bottom: 0;
+	min-width: 104px;
+	width: 100%;
+}
+.accumulators-icon .accumulators-icon-elem span{
+	text-transform: lowercase;
+}
+.tr-accumulators  td:nth-child(2),
+.tr-accumulators  td:nth-child(4){
+	display: none;
+}
+
+.tr-accumulators  td:nth-child(3){
+	width: 390px !important;
+}
+
+.tr-accumulators-table .row .cell{
+	width: 185px;
+}
+
+.tr-accumulators-table .row .cell:nth-child(2) a{
+	text-align: left;
+}
+
+.disks-icon .table .row .cell{
+	width: 50%;
+}
+
+.disks-icon .table .row .cell:nth-child(2),
+.disks-icon  .row .cell:nth-child(2)
+{
+	text-align: right;
+}
+
+.disks-icon{
+	width: 100%;
+	font-size: 12px;
+	color:#333333;
+}
+
+.disks-icon b{
+	font-weight: bold;
+}
+
+.basket-list .tyres {
+	display: flex;
+	align-items: center;
+    border-bottom: 2px solid #999999;
+
+}
+
+.basket-list-table .row .cell {
+	border-bottom: none !important;
+}
+
+@media(max-width: 991px) {
+    .basket.order .basket-list-table .row .cell:nth-child(2) {
+        width: 200px;
+    }
+}
+
+@media (max-width: 767px) {
+
+	.basketBlockGreen {
+		min-width: initial;
+		height: initial;
+		right:0;
+	}
+
+	.form_car_main .col-xs-4{
+		width:100%;
+	}
+
+	
+}
+
