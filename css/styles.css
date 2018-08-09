@@ -936,7 +936,7 @@ input[type="checkbox"] + label span {
 }
 
 .cart_product h1 {
-	background: url(/local/templates/__main/css/../images/label-h1-cart-product.png);
+	background: url(../images/label-h1-cart-product.png);
 	background-size: cover;
 	max-width: 611px;
 	width: initial;
